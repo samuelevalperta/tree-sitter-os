@@ -13,7 +13,10 @@ module.exports = grammar({
 
   rules: {
     // TODO: add the actual grammar rules
-    source_file: $ => repeat($.keyword),
+    source_file: $ => repeat(choice(
+      $.keyword,
+      $.ignored
+    )),
 
     keyword: $ => choice(
       'for',
@@ -37,9 +40,9 @@ module.exports = grammar({
       'else',
       'not',
       '.'    
-    )
+    ),
 
-    // identifier: $ => /[a-zA-Z_][a-zA-Z0-9_]*/
+    ignored: $ => /.+/,
 
   }
 });

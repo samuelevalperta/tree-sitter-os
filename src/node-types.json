@@ -14,6 +14,10 @@
       "required": false,
       "types": [
         {
+          "type": "ignored",
+          "named": true
+        },
+        {
           "type": "keyword",
           "named": true
         }
@@ -71,6 +75,10 @@
   {
     "type": "if",
     "named": false
+  },
+  {
+    "type": "ignored",
+    "named": true
   },
   {
     "type": "in",

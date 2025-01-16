@@ -5,8 +5,17 @@
     "source_file": {
       "type": "REPEAT",
       "content": {
-        "type": "SYMBOL",
-        "name": "keyword"
+        "type": "CHOICE",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "name": "keyword"
+          },
+          {
+            "type": "SYMBOL",
+            "name": "ignored"
+          }
+        ]
       }
     },
     "keyword": {
@@ -97,6 +106,10 @@
           "value": "."
         }
       ]
+    },
+    "ignored": {
+      "type": "PATTERN",
+      "value": ".+"
     }
   },
   "extras": [
