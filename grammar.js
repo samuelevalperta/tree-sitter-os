@@ -42,7 +42,7 @@ module.exports = grammar({
       '.'    
     ),
 
-    ignored: $ => /.+/,
+    ignored: $ => token(/[^\s]+/), 
 
   }
 });
