@@ -21,7 +21,23 @@
     }
   },
   {
+    "type": ".",
+    "named": false
+  },
+  {
+    "type": "Integer",
+    "named": false
+  },
+  {
+    "type": "String",
+    "named": false
+  },
+  {
     "type": "do",
+    "named": false
+  },
+  {
+    "type": "else",
     "named": false
   },
   {
@@ -29,7 +45,63 @@
     "named": false
   },
   {
+    "type": "end-for",
+    "named": false
+  },
+  {
+    "type": "endfor",
+    "named": false
+  },
+  {
+    "type": "endif",
+    "named": false
+  },
+  {
+    "type": "false",
+    "named": false
+  },
+  {
     "type": "for",
+    "named": false
+  },
+  {
+    "type": "foreach",
+    "named": false
+  },
+  {
+    "type": "if",
+    "named": false
+  },
+  {
+    "type": "in",
+    "named": false
+  },
+  {
+    "type": "not",
+    "named": false
+  },
+  {
+    "type": "return",
+    "named": false
+  },
+  {
+    "type": "then",
+    "named": false
+  },
+  {
+    "type": "to",
+    "named": false
+  },
+  {
+    "type": "true",
+    "named": false
+  },
+  {
+    "type": "type",
+    "named": false
+  },
+  {
+    "type": "var",
     "named": false
   }
 ]

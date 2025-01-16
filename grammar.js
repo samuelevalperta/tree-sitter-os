@@ -36,8 +36,11 @@ module.exports = grammar({
       'true',
       'else',
       'not',
-      '.'
+      '.'    
     )
+
+    // identifier: $ => /[a-zA-Z_][a-zA-Z0-9_]*/
+
   }
 });
 
