@@ -13,12 +13,12 @@ module.exports = grammar({
 
   rules: {
     // TODO: add the actual grammar rules
-    source_file: $ => token(repeat(choice(
+    source_file: $ => repeat(choice(
       $.keyword,
       $.ignored
     )),
 
-    keyword: $ => choice(
+    keyword: $ => token(choice(
       'for',
       'do',
       'end',
