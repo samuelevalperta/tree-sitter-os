@@ -13,7 +13,7 @@ module.exports = grammar({
 
   rules: {
     // TODO: add the actual grammar rules
-    source_file: $ => repeat(choice(
+    source_file: $ => token(repeat(choice(
       $.keyword,
       $.ignored
     )),
@@ -40,7 +40,7 @@ module.exports = grammar({
       'else',
       'not',
       '.'    
-    ),
+    )),
 
     ignored: $ => token(/[^\s]+/), 
 
