@@ -18,7 +18,25 @@ module.exports = grammar({
     keyword: $ => choice(
       'for',
       'do',
-      'end'
+      'end',
+      'if',
+      'end-for',
+      'var',
+      'then',
+      'to',
+      'in',
+      'return',
+      'endif',
+      'endfor',
+      'foreach',
+      'type',
+      'Integer',
+      'String',
+      'false',
+      'true',
+      'else',
+      'not',
+      '.'
     )
   }
 });
